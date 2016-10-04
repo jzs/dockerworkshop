@@ -11,3 +11,10 @@ dependencies:
 test:
     override:
         - docker-compose up -d
+deployment:
+    master:
+        branch: master
+        commands:
+            - docker login -u jzso -p $DOCKER_PASSWORD
+            - docker tag devopsworkshop_web jzso/devopsworkshop
+            - docker push jzso/devopsworkshop
