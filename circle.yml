@@ -3,7 +3,7 @@ machine:
         - docker
 dependencies:
     override:
-        docker-compose build
+        - docker-compose build
 test:
     override:
         - docker-compose up -d
