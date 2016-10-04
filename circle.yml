@@ -16,5 +16,5 @@ deployment:
         branch: master
         commands:
             - docker login -u jzso -p $DOCKER_PASSWORD -e jzs@sketchground.dk
-            - docker tag devopsworkshop_web jzso/devopsworkshop
+            - docker tag dockerworkshop_web jzso/devopsworkshop
             - docker push jzso/devopsworkshop
